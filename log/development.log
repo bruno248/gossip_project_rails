@@ -5581,3 +5581,645 @@ Processing by PotinController#show as HTML
 Completed 200 OK in 141ms (Views: 137.3ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/accueil/" for ::1 at 2021-08-02 16:25:25 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/accueil"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/welcome/Bruno" for ::1 at 2021-08-02 16:25:28 +0200
+Processing by PageController#welcome as HTML
+  Parameters: {"user_entry"=>"Bruno"}
+  Rendering page/welcome.html.erb within layouts/application
+  Rendered page/welcome.html.erb within layouts/application (2634.7ms)
+Completed 500 Internal Server Error in 2672ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `accueil_path' for #<#<Class:0x00007fe86b28a270>:0x00007fe86b2888a8>
+Did you mean?  audio_path):
+     8: BIENVENUE <%= params[:user_entry] %> ! Ici c'est notre super site de potins, il est chouette, non ?
+     9: 
+    10: <p> </p>
+    11: <%= link_to "clique ici pour accéder au site", accueil_path %>.
+  
+app/views/page/welcome.html.erb:11:in `_app_views_page_welcome_html_erb___1348231574437676932_25660'
+Started GET "/" for ::1 at 2021-08-02 16:26:49 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (113.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:5
+  Rendered potin/index.html.erb within layouts/application (133.8ms)
+Completed 200 OK in 307ms (Views: 189.5ms | ActiveRecord: 113.8ms)
+
+
+Started GET "/" for ::1 at 2021-08-02 16:27:08 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.7ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:5
+  Rendered potin/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 113ms (Views: 109.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2021-08-02 16:27:15 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:4
+  Rendered potin/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2021-08-02 16:27:44 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:5
+  Rendered potin/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 70ms (Views: 66.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2021-08-02 16:27:58 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.9ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:5
+  Rendered potin/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 99ms (Views: 95.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2021-08-02 16:28:07 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.9ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:5
+  Rendered potin/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 140ms (Views: 136.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2021-08-02 16:28:25 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.9ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:5
+  Rendered potin/index.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    4: 
+    5: <% @gossips.each do |gossip| %>
+    6:     <div>
+    7:         <h2> <%= @gossip.title %> <%= link_to "lien vers le Gossip --> #{gossip.title}", potin_path(gossip) %></h2> 
+    8:     </div>
+    9: <% end %>
+   10: 
+  
+app/views/potin/index.html.erb:7:in `block in _app_views_potin_index_html_erb___326564694092748055_26740'
+app/views/potin/index.html.erb:5:in `_app_views_potin_index_html_erb___326564694092748055_26740'
+Started GET "/" for ::1 at 2021-08-02 16:28:35 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:5
+  Rendered potin/index.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    3:   <div class="card-body">
+    4: 
+    5: <% @gossips.each do |gossip| %>
+    6:     <div> <%= @gossip.title %>
+    7:         <h2>  <%= link_to "lien vers le Gossip --> #{gossip.title}", potin_path(gossip) %></h2> 
+    8:     </div>
+    9: <% end %>
+  
+app/views/potin/index.html.erb:6:in `block in _app_views_potin_index_html_erb___326564694092748055_27260'
+app/views/potin/index.html.erb:5:in `_app_views_potin_index_html_erb___326564694092748055_27260'
+Started GET "/" for ::1 at 2021-08-02 16:28:45 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.9ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:5
+  Rendered potin/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 62ms (Views: 57.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/welcome" for ::1 at 2021-08-02 16:30:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/welcome"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-08-02 16:30:39 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:7
+  Rendered potin/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 88ms (Views: 84.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/.../100px180/" for ::1 at 2021-08-02 16:30:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/.../100px180"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-08-02 16:30:54 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:7
+  Rendered potin/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 73ms (Views: 70.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-02 16:31:26 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (27.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:7
+  Rendered potin/index.html.erb within layouts/application (579.0ms)
+Completed 500 Internal Server Error in 603ms (ActiveRecord: 27.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `le' for #<#<Class:0x00007fe86d240858>:0x00007fe86872a468>
+Did you mean?  l):
+    14:     <%= gossip.title %></h5>
+    15:         <h2>  
+    16:         <a href="#" class="btn btn-primary">
+    17:         <%= link_to lien vers le Gossip, potin_path(gossip) %></a>
+    18:         
+    19:           </div>
+    20: </div>
+  
+app/views/potin/index.html.erb:17:in `block in _app_views_potin_index_html_erb___326564694092748055_29020'
+app/views/potin/index.html.erb:7:in `_app_views_potin_index_html_erb___326564694092748055_29020'
+Started GET "/" for ::1 at 2021-08-02 16:31:28 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.2ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:7
+  Rendered potin/index.html.erb within layouts/application (262.2ms)
+Completed 500 Internal Server Error in 270ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `le' for #<#<Class:0x00007fe86d240858>:0x00007fe86c0d56e0>
+Did you mean?  l):
+    14:     <%= gossip.title %></h5>
+    15:         <h2>  
+    16:         <a href="#" class="btn btn-primary">
+    17:         <%= link_to lien vers le Gossip, potin_path(gossip) %></a>
+    18:         
+    19:           </div>
+    20: </div>
+  
+app/views/potin/index.html.erb:17:in `block in _app_views_potin_index_html_erb___326564694092748055_29580'
+app/views/potin/index.html.erb:7:in `_app_views_potin_index_html_erb___326564694092748055_29580'
+Started GET "/" for ::1 at 2021-08-02 16:31:41 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:7
+  Rendered potin/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 126ms (Views: 122.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2021-08-02 16:31:53 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.7ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:7
+  Rendered potin/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 104ms (Views: 97.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2021-08-02 16:32:15 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:6
+  Rendered potin/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 210ms (Views: 206.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-02 16:32:38 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.7ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:6
+  Rendered potin/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 192ms (Views: 187.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2021-08-02 16:32:49 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:6
+  Rendered potin/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 268ms (Views: 264.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2021-08-02 16:33:05 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:3
+  Rendered potin/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 136ms (Views: 121.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/potin/1" for ::1 at 2021-08-02 16:33:15 +0200
+Processing by PotinController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGossip Load (0.4ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/potin_controller.rb:7
+  Rendering potin/show.html.erb within layouts/application
+  Rendered potin/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 129ms (Views: 124.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/potin/1" for ::1 at 2021-08-02 16:33:53 +0200
+Processing by PotinController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGossip Load (0.2ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/potin_controller.rb:7
+  Rendering potin/show.html.erb within layouts/application
+  Rendered potin/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 65ms (Views: 60.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/welcome" for ::1 at 2021-08-02 16:34:44 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/welcome"):
+  
+actionpack (5.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.6) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.6) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.6) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.6) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/welcome/Bruno" for ::1 at 2021-08-02 16:34:56 +0200
+Processing by PageController#welcome as HTML
+  Parameters: {"user_entry"=>"Bruno"}
+  Rendering page/welcome.html.erb within layouts/application
+  Rendered page/welcome.html.erb within layouts/application (667.2ms)
+Completed 500 Internal Server Error in 702ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_path' for #<#<Class:0x00007fe86b28a270>:0x00007fe86d16b518>
+Did you mean?  video_path):
+     8: BIENVENUE <%= params[:user_entry] %> ! Ici c'est notre super site de potins, il est chouette, non ?
+     9: 
+    10: <p> </p>
+    11: <%= link_to "clique ici pour accéder au site", index_path %>.
+  
+app/views/page/welcome.html.erb:11:in `_app_views_page_welcome_html_erb___1348231574437676932_31260'
+Started GET "/welcome/Bruno" for ::1 at 2021-08-02 16:35:08 +0200
+Processing by PageController#welcome as HTML
+  Parameters: {"user_entry"=>"Bruno"}
+  Rendering page/welcome.html.erb within layouts/application
+  Rendered page/welcome.html.erb within layouts/application (820.1ms)
+Completed 500 Internal Server Error in 927ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_path' for #<#<Class:0x00007fe86b28a270>:0x00007fe864ce2df0>
+Did you mean?  video_path):
+     8: BIENVENUE <%= params[:user_entry] %> ! Ici c'est notre super site de potins, il est chouette, non ?
+     9: 
+    10: <p> </p>
+    11: <%= link_to "clique ici pour accéder au site", index_path %>
+  
+app/views/page/welcome.html.erb:11:in `_app_views_page_welcome_html_erb___1348231574437676932_31800'
+Started GET "/welcome/Bruno" for ::1 at 2021-08-02 16:35:44 +0200
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/bruno/.rvm/gems/ruby-2.7.4/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by PageController#welcome as HTML
+  Parameters: {"user_entry"=>"Bruno"}
+  Rendering page/welcome.html.erb within layouts/application
+  Rendered page/welcome.html.erb within layouts/application (823.0ms)
+Completed 500 Internal Server Error in 866ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `_path' for #<#<Class:0x00007fd6da5658c0>:0x00007fd6ddd18ab0>):
+     8: BIENVENUE <%= params[:user_entry] %> ! Ici c'est notre super site de potins, il est chouette, non ?
+     9: 
+    10: <p> </p>
+    11: <%= link_to "clique ici pour accéder au site", _path %>
+  
+app/views/page/welcome.html.erb:11:in `_app_views_page_welcome_html_erb___2887009015562990153_14620'
+Started GET "/welcome/Bruno" for ::1 at 2021-08-02 16:35:46 +0200
+Processing by PageController#welcome as HTML
+  Parameters: {"user_entry"=>"Bruno"}
+  Rendering page/welcome.html.erb within layouts/application
+  Rendered page/welcome.html.erb within layouts/application (861.9ms)
+Completed 500 Internal Server Error in 872ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `_path' for #<#<Class:0x00007fd6da5658c0>:0x00007fd6dab54df8>):
+     8: BIENVENUE <%= params[:user_entry] %> ! Ici c'est notre super site de potins, il est chouette, non ?
+     9: 
+    10: <p> </p>
+    11: <%= link_to "clique ici pour accéder au site", _path %>
+  
+app/views/page/welcome.html.erb:11:in `_app_views_page_welcome_html_erb___2887009015562990153_15260'
+Started GET "/welcome/Bruno" for ::1 at 2021-08-02 16:36:02 +0200
+Processing by PageController#welcome as HTML
+  Parameters: {"user_entry"=>"Bruno"}
+  Rendering page/welcome.html.erb within layouts/application
+  Rendered page/welcome.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bruno/Desktop/THP/the_gossip_projects6d1/app/views/page/welcome.html.erb:15: unterminated regexp meets end of file
+          end
+             ^
+/Users/bruno/Desktop/THP/the_gossip_projects6d1/app/views/page/welcome.html.erb:15: unmatched close parenthesis: /_path );
+@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+/m
+/Users/bruno/Desktop/THP/the_gossip_projects6d1/app/views/page/welcome.html.erb:15: syntax error, unexpected end-of-input, expecting ')'):
+  
+app/views/page/welcome.html.erb:15: unterminated regexp meets end of file
+app/views/page/welcome.html.erb:15: unmatched close parenthesis: /_path );
+app/views/page/welcome.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/welcome/Bruno" for ::1 at 2021-08-02 16:36:28 +0200
+Processing by PageController#welcome as HTML
+  Parameters: {"user_entry"=>"Bruno"}
+  Rendering page/welcome.html.erb within layouts/application
+  Rendered page/welcome.html.erb within layouts/application (10.8ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"potin", :user_entry=>"Bruno"}, missing required keys: [:id]):
+     8: BIENVENUE <%= params[:user_entry] %> ! Ici c'est notre super site de potins, il est chouette, non ?
+     9: 
+    10: <p> </p>
+    11: <%= link_to "clique ici pour accéder au site", potin_path %>
+  
+app/views/page/welcome.html.erb:11:in `_app_views_page_welcome_html_erb___2887009015562990153_16380'
+Started GET "/welcome/Bruno" for ::1 at 2021-08-02 16:36:40 +0200
+Processing by PageController#welcome as HTML
+  Parameters: {"user_entry"=>"Bruno"}
+  Rendering page/welcome.html.erb within layouts/application
+  Rendered page/welcome.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 787ms (Views: 785.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/Bruno" for ::1 at 2021-08-02 16:36:55 +0200
+Processing by PageController#welcome as HTML
+  Parameters: {"user_entry"=>"Bruno"}
+  Rendering page/welcome.html.erb within layouts/application
+  Rendered page/welcome.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 89ms (Views: 87.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/potin" for ::1 at 2021-08-02 16:36:57 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (55.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:3
+  Rendered potin/index.html.erb within layouts/application (180.3ms)
+Completed 200 OK in 437ms (Views: 343.9ms | ActiveRecord: 57.4ms)
+
+
+Started GET "/welcome/Bruno" for ::1 at 2021-08-02 16:37:07 +0200
+Processing by PageController#welcome as HTML
+  Parameters: {"user_entry"=>"Bruno"}
+  Rendering page/welcome.html.erb within layouts/application
+  Rendered page/welcome.html.erb within layouts/application (987.9ms)
+Completed 500 Internal Server Error in 995ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `index_path' for #<#<Class:0x00007fd6da5658c0>:0x00007fd6de72c448>
+Did you mean?  video_path):
+     8: BIENVENUE <%= params[:user_entry] %> ! Ici c'est notre super site de potins, il est chouette, non ?
+     9: 
+    10: <p> </p>
+    11: <%= link_to "clique ici pour accéder au site", index_path %>
+  
+app/views/page/welcome.html.erb:11:in `_app_views_page_welcome_html_erb___2887009015562990153_17380'
+Started GET "/welcome/Bruno" for ::1 at 2021-08-02 16:37:36 +0200
+Processing by PageController#welcome as HTML
+  Parameters: {"user_entry"=>"Bruno"}
+  Rendering page/welcome.html.erb within layouts/application
+  Rendered page/welcome.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 76ms (Views: 74.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/potin" for ::1 at 2021-08-02 16:37:38 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.9ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:3
+  Rendered potin/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 85ms (Views: 79.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/potin/1" for ::1 at 2021-08-02 16:37:39 +0200
+Processing by PotinController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/potin_controller.rb:7
+  Rendering potin/show.html.erb within layouts/application
+  Rendered potin/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 122ms (Views: 62.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/potin/1" for ::1 at 2021-08-02 16:38:08 +0200
+Processing by PotinController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/potin_controller.rb:7
+  Rendering potin/show.html.erb within layouts/application
+  Rendered potin/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 87ms (Views: 80.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/potin/1" for ::1 at 2021-08-02 16:38:30 +0200
+Processing by PotinController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGossip Load (0.3ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/potin_controller.rb:7
+  Rendering potin/show.html.erb within layouts/application
+  Rendered potin/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 92ms (Views: 82.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/potin/1" for ::1 at 2021-08-02 16:38:45 +0200
+Processing by PotinController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGossip Load (0.7ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/potin_controller.rb:7
+  Rendering potin/show.html.erb within layouts/application
+  Rendered potin/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 50ms (Views: 45.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/potin/1" for ::1 at 2021-08-02 16:38:54 +0200
+Processing by PotinController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGossip Load (0.2ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/potin_controller.rb:7
+  Rendering potin/show.html.erb within layouts/application
+  Rendered potin/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 50ms (Views: 47.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/potin/1" for ::1 at 2021-08-02 16:39:07 +0200
+Processing by PotinController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGossip Load (0.2ms)[0m  [1m[34mSELECT  "gossips".* FROM "gossips" WHERE "gossips"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/potin_controller.rb:7
+  Rendering potin/show.html.erb within layouts/application
+  Rendered potin/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 90ms (Views: 84.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/potin" for ::1 at 2021-08-02 16:40:11 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:3
+  Rendered potin/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 213ms (Views: 209.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/welcome/Bruno" for ::1 at 2021-08-02 16:40:12 +0200
+Processing by PageController#welcome as HTML
+  Parameters: {"user_entry"=>"Bruno"}
+  Rendering page/welcome.html.erb within layouts/application
+  Rendered page/welcome.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 120ms (Views: 118.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/welcome/Bruno" for ::1 at 2021-08-02 16:40:13 +0200
+Processing by PageController#welcome as HTML
+  Parameters: {"user_entry"=>"Bruno"}
+  Rendering page/welcome.html.erb within layouts/application
+  Rendered page/welcome.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 61ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2021-08-02 16:40:14 +0200
+Processing by PotinController#index as HTML
+  Rendering potin/index.html.erb within layouts/application
+  [1m[36mGossip Load (1.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips"[0m
+  ↳ app/views/potin/index.html.erb:3
+  Rendered potin/index.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 113ms (Views: 110.8ms | ActiveRecord: 1.0ms)
+
+

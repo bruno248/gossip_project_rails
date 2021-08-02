@@ -1,14 +1,36 @@
 
 
 <% @gossips.each do |gossip| %>
-    <div>
-        <h2> <%= link_to "lien vers le Gossip --> #{gossip.title}", potin_path(gossip) %></h2> 
+
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">
+
+    <div> 
+    
+    <%= gossip.title %></h5>
+ 
+    <p class="card-text"> le lien ci dessous</p>
+
+
+
+        <a href="#" class="btn btn-primary">
+        <%= link_to "accéder à la page du gossip", potin_path(gossip) %></a>
+        
+          </div>
+</div>
+        </h2> 
     </div>
+
+
+
+
+
 <% end %>
 
 
-
-
+       <%# <%= link_to "lien vers le Gossip --> #{gossip.title}", potin_path(gossip) %></a> %>
 
 <%# on est sur la view index donc on peut récupérer les objets du controller %>
 <%# link to remplace balise a\ %>
+

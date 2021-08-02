@@ -5,6 +5,10 @@ class PotinController < ApplicationController
 
   def show
     @gossip = Gossip.find(params[:id]) #on récupère l'id passé en index qui ressort dans le show
-    @date = @gossip.created_at.to_date
   end
+
+  def showuser
+    @gossip = Gossip.find(params[:id])
+  end
+
 end

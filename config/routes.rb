@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   
   get 'potin/show'
+  get 'potin/showuser'
 
   resources :potin
 
